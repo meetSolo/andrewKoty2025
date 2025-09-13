@@ -1,0 +1,10 @@
+AddHandler application/x-httpd-php72 php
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301] # <- for test, for prod use [L,R=301]
+
+RewriteRule ^([^/\.]+)?$ index.php?itemalias=$1

@@ -1,0 +1,530 @@
+/* General Styling */
+/* Page */
+/* template-funnel */
+body.page-template-template-funnel {
+    background-color: #ededed;
+}
+
+body.page-template-template-funnel #content {
+    min-height:100vh;
+}
+
+body.page-template-template-funnel .funnel-footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding:0.5rem;
+    text-align:center;
+    background:#323334;
+    font-size:12pt;
+    z-index:1;
+}
+
+body.page-template-template-funnel .funnel-footer p {
+    font-size:75%;
+    color:#ededed;
+}
+
+body.page-template-template-funnel .funnel-footer .footer-company-info {
+    font-size: 1em;
+}
+
+body.page-template-template-funnel .site-footer, body.page-template-template-funnel #menu-header, .navbar-toggler {
+    display: none;
+}
+
+/* template-partner */
+body.page-template-template-partner {
+    background-color: #f8f8f8;
+}
+
+body.page-template-template-partner #content {
+    min-height:100vh;
+}
+
+body.page-template-template-partner .site-footer,body.page-template-template-partner .funnel-footer , body.page-template-template-partner #menu-header, .navbar-toggler,body.page-template-template-partner .navbar {
+    display: none;
+}
+
+body.page-template-template-partner .fragebogen-header h3 {
+    background: #f5fff2;
+}
+
+/* Gravity Forms */
+.gform_wrapper form {
+    max-width: 768px;
+    background: #fff;
+    margin:0 auto;
+    border-left: 2px solid #aaa;
+    border-right: 2px solid #aaa;
+}
+
+.gform_body {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+    padding:5rem 6rem 3rem;
+    max-width: 768px;
+    margin:0 auto;
+    background-color: #f5fff2;
+}
+
+.gform_page {
+    width:100%;
+}
+
+.gform_fields li {
+    margin:0.5rem;
+    text-align: center;
+}
+
+.gform_page.with-next-button .gform_page_footer .gform_next_button, .gform_page_footer input[type="submit"] {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    width:100%;
+    padding: 1.5rem 0;
+    border: 0 none;
+    border-radius: 4px;
+    background-color: #434558;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.gform_page.with-next-button .gform_page_footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.gform_footer .gform_button, .gform_footer input[type="submit"] {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    width:100%;
+    padding: 1.5rem 0;
+    border: 0 none;
+    border-radius: 4px;
+    background-color: #434558;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.gform_footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.gfield_required {
+    display:none;
+}
+
+/* Validation message */
+body .gform_wrapper div.validation_error {
+    position: relative;
+    top: -69px;
+    left: 0;
+    width: 100%;
+    width: -webkit-fill-available;
+    background: #ededed;
+    text-align: center;
+    color: #f15555;
+    text-transform: none;
+    letter-spacing: 0.03rem;
+    font-weight: 600;
+    border-top: 12px solid #f15555;
+    z-index: 102;
+    margin-bottom: -69px;
+    padding: 1rem;
+}
+
+li.gfield_error li:not(.gfsp_choice_icn):not(.gfsp_choice_img) input+label, li.gfield_error input[type=email], li.gfield_error .slider-display {
+    border: 2px dashed #f15555 !important;
+}
+
+.gfield_description.validation_message {
+    color: #f15555;
+    margin-bottom:3rem;
+}
+
+.gfield_error .noUi-target {
+    border: 2px dashed #f15555;
+}
+
+.gfield_error .gfield_description, .gfield_error label {
+    color: #f15555;
+}
+
+/* Fragebogen Header */
+.fragebogen-header {
+    padding-top: 15vh !important;
+}
+
+.fragebogen-header h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight:400;
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-right: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+    border-top: 2px solid #aaa;
+    font-size:13pt;
+}
+
+/* Fragebogen Footer */
+.fragebogen-footer {
+    margin-bottom:4rem;
+}
+.fragebogen-footer center {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: #ededed;
+    border-right: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+.fragebogen-footer center img {
+    filter: grayscale();
+    opacity: 0.5;
+}
+
+/* Progress Bar */
+.gf_progressbar_title {
+    display: none;
+}
+
+.gf_progressbar_wrapper {
+    text-align: center;
+    max-height:12px;
+}
+
+.gf_progressbar_percentage {
+    height:12px;
+}
+
+.gf_progressbar_percentage > span {
+    display: none;
+}
+
+.gf_progressbar {
+    background: #ededed;
+}
+
+.gf_progressbar .gf_progressbar_percentage span {
+    margin-left:1rem;
+}
+
+/* Gform Lists */
+.gform_body ul {
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.gform_body ul li {
+    display: block;
+    flex: 1 1 0px;
+    flex-basis: calc(50% - 1rem);
+}
+
+.gform_body ul li.thirds ul li {
+    flex-basis: calc(33% - 1rem);
+}
+
+.gform_body ul li.half ul li {
+    flex-basis: calc(50% - 1rem);
+}
+
+.gform_body ul li.gfield {
+    display: block;
+    width:100%;
+    flex-basis: 100%;
+    margin-bottom:3rem;
+}
+
+.gform_body ul li.gfield.gform_hidden {
+    margin: 0;
+}
+
+.gform_body ul li.gfield:last-of-type {
+    margin-bottom:1rem;
+}
+
+.gform_body li.hidden_label .gfield_label {
+    display:none;
+}
+
+.gform_body ul .gfield_label {
+    display: block;
+    font-size: 20pt;
+    line-height: 1.2;
+    margin-bottom:3rem;
+    text-align:center;
+    font-family: "np-suna-grotesk-regular", Arial, Helvetica, sans-serif;
+}
+
+.gform_body ul li .gfield_description {
+    text-align:left;
+    margin-left:1rem;
+}
+
+.gform_body ul li.gform_rangeslider .gfield_label {
+    text-align: left;
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+}
+
+.gf_name_has_2 label {
+    margin-left:0.5rem;
+    width:100%;
+    text-align: left;
+    display: block;
+}
+
+.gform_body ul li.gfield.close-to-next {
+    margin-bottom:0.5rem;
+}
+
+/* AGB Text */
+.agb-text {
+    margin-bottom:2rem;
+    text-align:left;
+    font-size:12pt;
+    margin-left:1rem;
+}
+
+/* Checkboxen */
+.gfield_checkbox li input+label {
+    cursor:pointer;
+    display: inline-block;
+    padding: 1.5rem 0;
+    background: #fff;
+    opacity: 1;
+    margin: 12px 0;
+    border: 1px solid #aaa;
+    min-height: initial;
+    color: #505050;
+    position: relative;
+    width: 100%;
+    box-shadow: 1px 1px 5px #dedede;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+.gfield_checkbox li input+label.active {
+    background-color: #56BA8C;
+    color: #fff;
+}
+
+.gfield_checkbox li input {
+    display:none;
+}
+
+.gfield_checkbox li :checked+label {
+    background: #56BA8C;
+    color:#fff;
+}
+
+/* Radios */
+ul.gfield_radio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.gfield_radio li input+label {
+    cursor:pointer;
+    display: inline-block;
+    padding: 1.5rem 0;
+    background: #fff;
+    opacity: 1;
+    margin: 12px 0;
+    border: 1px solid #aaa;
+    min-height: initial;
+    color: #505050;
+    position: relative;
+    width:100%;
+    box-shadow: 1px 1px 5px #dedede;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+.gfield_radio li input {
+    display:none;
+}
+
+.gfield_radio li :checked+label {
+    background: #56BA8C;
+    color:#fff;
+}
+
+/* Range Slider */
+.ginput_container .noUi-target {
+    margin-left:4rem;
+    margin-right:4rem;
+}
+
+/* Name Field */
+.ginput_container.gf_name_has_2 {
+    display: flex;
+    flex: 1 1 0px;
+}
+
+.ginput_container.gf_name_has_2 span {
+    flex-basis: calc(50% - 1rem);
+    margin: 0 0.5rem;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="tel"] {
+    width:100%;
+    padding:1.5rem 3rem;
+    margin:19px 0;
+    font-weight:300;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+}
+
+.ginput_container_email {
+    margin: 0 0.5rem;
+}
+
+.ginput_container {
+    padding: 0.5rem;
+}
+
+.ginput_container:last-of-type {
+    margin-bottom:0;
+}
+
+.ginput_container.ginput_container_text {
+    padding: 0 1rem;
+}
+
+/* Textareas */
+.ginput_container textarea {
+    min-width: 98%;
+    max-width: 98%;
+    width:auto;
+    border: 1px solid #aaa;
+    border-radius:4px;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+.ginput_container .charleft {
+    font-size:12pt;
+}
+
+/* Page Footer */
+.gform_page_footer {
+    display:block;
+    padding:0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.gform_page_footer .gform_next_button {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.gform_page_footer .gform_previous_button {
+    display: block;
+    float: left;
+    background-color: transparent;
+    color: #aaa;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    border: 0 none;
+}
+
+/* Footer */
+.gform_footer {
+    background-color: #f5fff2;
+    display:block;
+    padding:0.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.gform_wrapper form {
+    background-color: #f5fff2;
+}
+
+
+@media only screen and (min-width: 641px) {
+    .gform_wrapper .top_label li ul.gfield_checkbox, .gform_wrapper .top_label li ul.gfield_radio {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 728px) {
+    .gform_body {
+        padding:5rem 1rem 0;
+    }
+    .gform_body ul li {
+        flex-basis: 100%;
+    }
+    .gfield_radio li input+label, .gfield_checkbox li input+label {
+        margin:0 auto;
+    }
+    .gform_body ul li.thirds ul li {
+        flex-basis: calc(50% - 1rem);
+    }
+    .gform_body ul li.half ul li {
+        flex-basis: 100%;
+    }
+    .fragebogen-header {
+        padding-top: 1rem !important;
+    }
+    .fragebogen-footer {
+        margin-bottom:6rem;
+    }
+    .site-header {
+        display:none;
+    }
+    .gform_body ul li.gfield.gsection {
+        margin-bottom: 1rem;
+    }
+    .gsection_title {
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+        padding: 1.5rem 1rem;
+    }
+    /* Individual styles */
+    #gform_page_2_1 {
+        padding-bottom:3rem;
+    }
+    #gform_fields_2_5 li {
+        flex-basis: 100%;
+    }
+    #input_2_36 li {
+        flex-basis: calc(33% - 1rem);
+    }
+    .ginput_container.gf_name_has_2 {
+        display:block;
+    }
+    /* Mobile Footer */
+    body.page-template-template-funnel .funnel-footer .footer-company-info {
+        display:block;
+        width:100%;
+    }
+}
